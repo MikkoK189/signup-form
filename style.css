@@ -3,7 +3,10 @@
   src: url(media/Norse-Bold.otf);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 * {
+  font-family: "Rubik", sans-serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
