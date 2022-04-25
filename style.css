@@ -3,10 +3,16 @@
   src: url(media/Norse-Bold.otf);
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-flow: row wrap;
-  background-color: gray;
+  background-color: rgb(136, 136, 136);
   width: 100vw;
   height: 100vh;
 }
@@ -51,40 +57,77 @@ h1 {
 }
 
 .form-container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  background-color: rgb(233, 233, 233);
   width: 60vw;
-  min-height: 100%;
+  display: flex;
+  background-color: rgb(226, 226, 226);
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .hero-text {
-  padding-top: 5%;
   padding-bottom: 5%;
   font-size: 28px;
   font-weight: bolder;
   align-content: center;
   text-align: left;
   width: 90%;
+  text-shadow: 2px 2px rgba(185, 185, 185, 0.2);
 }
 
-form {
+.form {
   background-color: rgb(255, 255, 255);
-  width: 100%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  box-shadow: 0 10px 20px -2px rgb(54, 54, 54);
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 50px;
-  column-gap: 50px;
-  font-weight: bold;
-  color: gray;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-label,
-input {
+.input {
   display: flex;
-  flex-direction: row;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 60%;
+}
+
+input {
+  background-color: rgb(216, 216, 216);
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 255, 85);
+}
+
+.error {
+  outline: none;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.left {
+  padding-left: 3vw;
+}
+
+.login {
+  font-weight: bold;
+}
+
+a {
+  color: #596d48;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 10px 40px;
+  box-shadow: 2px 2px 5px 5px black;
+  margin: 40px 0;
 }

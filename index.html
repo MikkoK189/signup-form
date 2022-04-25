@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="form-container">
-      <div class="hero-text">
+      <div class="hero-text left">
         This is not a real service! You know you need something like this in<br />
         your life to help you realize your deepest dreams.<br />Sign up
         <i>now</i> to get started.
@@ -26,30 +26,55 @@
         You know you want to.
       </div>
       <form>
-        <div>
-          <label for="first_name">FIRST NAME</label>
-          <input type="text" name="first_name" id="first_name" />
-          <label for="last_name">LAST NAME</label>
-          <input type="text" name="last_name" id="last_name" />
+        <div class="form left">
+          <div class="input">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" id="first_name" />
+          </div>
+          <div class="input">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" id="last_name" />
+          </div>
+
+          <div class="input">
+            <label for="user_email">EMAIL</label>
+            <input
+              type="email"
+              id="user_email"
+              name="email"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div class="input">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="tel" id="phone_number" name="phone_number" />
+          </div>
+          <div class="input">
+            <label for="user_password">PASSWORD</label>
+            <input
+              class="error"
+              type="password"
+              id="user_password"
+              name="password"
+            />
+          </div>
+          <div class="input">
+            <label for="user_password">CONFIRM PASSWORD</label>
+            <input
+              class="error"
+              type="password"
+              id="user_password"
+              name="password"
+            />
+          </div>
         </div>
-        <div>
-          <label for="user_email">EMAIL</label>
-          <input
-            type="email"
-            id="user_email"
-            name="email"
-            placeholder="you@example.com"
-          />
-          <label for="phone_number">PHONE NUMBER</label>
-          <input type="tel" id="phone_number" name="phone_number" />
-        </div>
-        <div>
-          <label for="user_password">PASSWORD</label>
-          <input type="password" id="user_password" name="password" />
-          <label for="user_password">CONFIRM PASSWORD</label>
-          <input type="password" id="user_password" name="password" />
+        <div class="left button">
+          <button type="submit">Create Account</button>
         </div>
       </form>
+      <div class="left login">
+        Already have an account? Click <a href="#">here!</a>
+      </div>
     </div>
   </body>
 </html>
