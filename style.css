@@ -9,12 +9,13 @@ body {
 }
 
 .img-container {
-  width: 35%;
+  width: 600px;
   height: auto;
 }
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -30,7 +31,7 @@ img {
   width: inherit;
   padding-top: 10px;
   height: 250px;
-  top: 35%;
+  top: 15%;
   background-color: rgba(26, 26, 26, 0.5);
 }
 
@@ -42,7 +43,39 @@ h1 {
 }
 
 .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   min-width: 65%;
   min-height: 100%;
+}
+
+.hero-text {
+  background-color: rgb(233, 233, 233);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 32px;
+  font-weight: bolder;
+  align-content: center;
+  text-align: left;
+  width: 100%;
+}
+
+form {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 50px;
+  column-gap: 50px;
+  font-weight: bold;
+  color: gray;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: row;
 }
